@@ -1,0 +1,91 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eceff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+header .logo {
+    width: 100px;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group {
+    padding: 20px;
+}
+
+input-group textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-group button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#encryptButton {
+    background-color: #4A90E2;
+    color: white;
+}
+
+#decryptButton {
+    background-color: transparent;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+}
+
+.image-group {
+    padding: 20px;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+.image-group img {
+    max-width: 80%;
+}
+
+.image-group p {
+    color: #404040;
+    margin-top: 20px;
+}
+
+footer {
+    grid-column: 1 / -1;
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
